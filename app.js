@@ -11,7 +11,7 @@ searchBar.addEventListener('keyup',(e)=>
 
 var count = 1;
 
-for(var i = 20; i<=35;i++)
+for(var i = 20; i<=50;i++)
 {
     fetch('https://api.themoviedb.org/3/movie/'+i+'?api_key=9067d5b883bb8d41403dc6c8833b8246')
     
@@ -70,6 +70,56 @@ for(var i = 20; i<=35;i++)
         {
             document.getElementById('name14').innerHTML = data.original_title;
             document.getElementById('img14').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+
+        else if(count==9)
+        {
+            document.getElementById('name1').innerHTML = data.original_title;
+            document.getElementById('img5').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+        else if(count==10)
+        {
+            document.getElementById('name2').innerHTML = data.original_title;
+            document.getElementById('img6').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+        else if(count==11)
+        {
+            document.getElementById('name3').innerHTML = data.original_title;
+            document.getElementById('img7').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+        else if(count==12)
+        {
+            document.getElementById('name4').innerHTML = data.original_title;
+            document.getElementById('img8').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+
+        else if(count==13)
+        {
+            document.getElementById('name1').innerHTML = data.original_title;
+            document.getElementById('img9').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+        else if(count==14)
+        {
+            document.getElementById('name2').innerHTML = data.original_title;
+            document.getElementById('img10').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+        else if(count==15)
+        {
+            document.getElementById('name3').innerHTML = data.original_title;
+            document.getElementById('img11').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
+            count++;
+        }
+        else if(count==16)
+        {
+            document.getElementById('name4').innerHTML = data.original_title;
+            document.getElementById('img12').src = "https://www.themoviedb.org/t/p/w500"+data.poster_path;
             count++;
         }
     })
